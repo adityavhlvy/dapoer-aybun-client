@@ -1,158 +1,108 @@
-# 🚀 Client Template – Vite + Vue 3 + DaisyUI
+# 🍲 Dapoer Aybun Client – Frontend Web App
 
-This template helps you kickstart modern **Frontend** development with:
+**Dapoer Aybun Client** is a **frontend web app** for a family-run catering, snack, and drink business. It showcases the business, menu items, customer testimonials, and provides contact information for orders.
 
-* ⚡ [Vite](https://vite.dev/) – super-fast build & dev server
-* 🖖 [Vue 3](https://vuejs.org/) – the progressive framework for UI
-* 🧭 [Vue Router](https://router.vuejs.org/) – official Vue routing
-* 📦 [Pinia](https://pinia.vuejs.org/) – official Vue state management
-* 🎨 [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS framework
-* 🌼 [DaisyUI](https://daisyui.com/) – prebuilt components + **theming support**
-* ✅ [Vitest](https://vitest.dev/) & [Playwright](https://playwright.dev/) – unit & end-to-end testing
-* 🧹 [ESLint](https://eslint.org/) + [Oxlint](https://oxlint.com/) + [Prettier](https://prettier.io/) – linting & formatting
+Built with:
+
+* ⚡ [Vite](https://vite.dev/) – fast build and development server
+* 🖖 [Vue 3](https://vuejs.org/) – progressive UI framework
+* 🎨 [Tailwind CSS](https://tailwindcss.com/) – utility-first styling
+* 🌼 [DaisyUI](https://daisyui.com/) – prebuilt components with theming
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite\&logoColor=white)
 ![Vue](https://img.shields.io/badge/Vue.js-42B883?logo=vue.js\&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css\&logoColor=white)
 ![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?logo=tailwind-css\&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest\&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright\&logoColor=white)
+
+---
+
+## 🏢 About the Project
+
+This app is designed to **present and promote the family catering business**.
+
+Main features:
+
+* Showcase **catering services** and **snacks/drinks**, such as:
+
+  * Kerupuk kangsung
+  * Jeruk kasturi and butterfly pea tea
+  * Traditional Indonesian dishes: rendang, gulai tunjang, ketupat, and home-style meals
+* **Business profile** and service overview
+* **Customer testimonials**
+* **Contact information** for orders
+
+The goal is to provide a simple, clear, and responsive web presence for the business.
 
 ---
 
 ## 📦 Installation
 
-Clone the repo and install dependencies:
+Clone the repository and install dependencies:
 
-```sh
-git clone https://github.com/username/client-template-vite-vue.git
-cd client-template-vite-vue
+```bash
+git clone https://github.com/username/dapoer-aybun-client.git
+cd dapoer-aybun-client
 npm install
 ```
 
-**Supported Node.js versions**:
-
-* `^20.19.0` or `>=22.12.0`
+**Supported Node.js versions**: `^20.19.0` or `>=22.12.0`
 
 ---
 
 ## 🛠️ Development
 
-Run local dev server with HMR:
+Start the development server with hot reload:
 
-```sh
+```bash
 npm run dev
 ```
 
-Open in [http://localhost:5173](http://localhost:5173).
+Open in your browser: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🏗️ Build
+## 🏗️ Production Build
 
-Compile and minify for production:
+Build for production:
 
-```sh
+```bash
 npm run build
 ```
 
-Preview the build:
+Preview the production build:
 
-```sh
+```bash
 npm run preview
-```
-
----
-
-## ✅ Testing
-
-### Unit Tests (Vitest)
-
-```sh
-npm run test:unit
-```
-
-### End-to-End Tests (Playwright)
-
-```sh
-# Install browser (only once)
-npx playwright install
-
-# Build before running tests in CI
-npm run build
-
-# Run all e2e tests
-npm run test:e2e
-
-# Run only on Chromium
-npm run test:e2e -- --project=chromium
-
-# Run a specific test file
-npm run test:e2e -- tests/example.spec.js
-
-# Debug mode
-npm run test:e2e -- --debug
 ```
 
 ---
 
 ## 🧹 Lint & Format
 
-Lint code with ESLint & Oxlint:
+Lint code with ESLint:
 
-```sh
+```bash
 npm run lint
 ```
 
-Auto-format with Prettier:
+Format code with Prettier:
 
-```sh
+```bash
 npm run format
 ```
 
 ---
 
-## 📂 Project Structure
+## 🌟 Key Features
 
-```
-client-template-vite-vue/
-├── public/              # Static files
-├── src/
-│   ├── assets/          # Assets (images, icons, etc.)
-│   ├── components/      # Vue components
-│   ├── stores/          # Pinia stores
-│   ├── views/           # Main views/pages
-│   ├── router/          # Vue Router setup
-│   ├── App.vue          # Root component
-│   └── main.js          # Entry point (JavaScript, not TS)
-├── tests/               # Unit & e2e tests
-├── vite.config.js       # Vite + Tailwind + DaisyUI config
-└── package.json
-```
-
----
-
-## 🌟 Features
-
-* ⚡ Blazing-fast build with Vite
-* 🌼 Full DaisyUI integration with **theming support** → switch themes easily (light/dark/retro/bumblebee, etc.)
-* 📦 Modular Vue 3 Composition API setup
-* 🧭 Vue Router included
-* 🔒 Pinia state management out of the box
-* ✅ Ready-to-use unit & e2e testing
-* 🧹 Auto linting + formatting
+* ⚡ Lightweight and fast frontend with Vite + Vue 3
+* 🌼 Consistent styling using Tailwind CSS + DaisyUI
+* 🧭 Multi-page navigation with Vue Router
+* ✅ Responsive design for different devices
 
 ---
 
 ## 🎨 DaisyUI Theming
 
-The template comes with **DaisyUI themes** preconfigured.
-You can switch themes directly from `vite.config.js` or at runtime using the `data-theme` attribute.
-
+Themes can be switched using the `data-theme` attribute or in `vite.config.js`.
 Full theme list: [https://daisyui.com/themes/](https://daisyui.com/themes/)
-
----
-
-## 📜 License
-
-[MIT](./LICENSE) © 2025 Kura Ninja
