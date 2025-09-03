@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400;700&display=swap");
+
+@import 'tailwindcss';
+
+@theme {
+  --font-baskervville: "Baskervville SC", serif;
+}
+
+@plugin "daisyui" {
+  themes: all;
+  base: false;
+}
