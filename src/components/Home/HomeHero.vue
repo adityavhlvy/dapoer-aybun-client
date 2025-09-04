@@ -3,11 +3,19 @@ import heroBg from '@/assets/img/hero-bg.png'
 import rendangImg from '@/assets/img/rendang.png'
 import tumpengImg from '@/assets/img/tumpeng.png'
 import orangesImg from '@/assets/img/oranges.png'
+
+import { Icon } from "@iconify/vue";
+
 </script>
 
 <template>
 
     <div class="h-full">
+
+        <div class="text-4xl font-bold text-yellow-500 text-center mb-10">
+            Makasih ya, Dania! :D <br />
+            Aku <span class="text-9xl text-pink-900">sayang</span> Kamu!!!!
+        </div>
 
         <div class="h-[calc(100vh-8rem)] rounded-3xl mb-10">
             <div class="hero h-full rounded-3xl relative overflow-hidden"
@@ -53,17 +61,70 @@ import orangesImg from '@/assets/img/oranges.png'
             </div>
         </div>
 
-        <div class="flex">
-            <div class="flex">
-                Catering
-            </div>
-            <div class="flex">
-                <div class="flex flex-col">
-                    <div >Our Sevices</div>
-                    <div>Snacks</div>
+        <div class="flex gap-4">
+            <div class="flex-1 bg-green-600 rounded-lg p-5 max-h-max">
+                <div class="flex-col">
+                    <div class="text-xl font-medium mb-1">
+                        Catering
+                    </div>
+                    <div>
+                        <div class="flex items-center">
+                            <div class="pr-4">
+                                <Icon icon="material-symbols:food-bank-rounded" width="72" height="72" />
+                            </div>
+                            <div class="text-xs text-justify">
+                                From intimate gatherings to grand celebrations, we offer tailored
+                                catering solutions
+                                that make your events unforgettable. Let us handle the food, so you can focus on
+                                creating memories.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex">Drinks</div>
+
+            <div class="flex-1">
+                <div class="text-3xl text-green-800 mb-10 text-center">
+                    Our <span class="font-bold">Services</span>
+                </div>
+                <div class="bg-green-800 rounded-lg p-5 max-h-max">
+                    <div class="flex-col">
+                        <div class="text-xl font-medium mb-1">
+                            Snacks
+                        </div>
+                        <div>
+                            <div class="flex">
+                                <div class="pr-5">
+                                    <Icon icon="streamline-ultimate:fast-food-french-fries" width="56" height="64" />
+                                </div>
+                                <div class="text-xs text-justify">
+                                    Savor the taste of tradition and creativity with our homemade meals and snacks.
+                                    From crispy kale crackers to hearty ketupat gulai tunjang, every bite tells a story.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 bg-green-600 rounded-lg p-5 max-h-max">
+                <div class="flex-col">
+                    <div class="text-xl font-medium mb-1">
+                        Drinks
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <div>
+                                <Icon icon="tabler:bottle" width="72" height="72" />
+                            </div>
+                            <div class="text-xs text-justify">
+                                Quench your thirst with our refreshing drink selections, including vibrant telang jelly
+                                tea, tangy kasturi orange, and zesty lemon green tea—perfect for any occasion.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
