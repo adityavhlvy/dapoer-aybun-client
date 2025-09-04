@@ -55,9 +55,9 @@ onMounted(() => {
 
         <!-- Navigation Links -->
         <div class="flex flex-2 justify-center">
-            <div class="bg-base-100 rounded-full px-3 py-2">
-                <nav class="flex gap-2">
-                    <RouterLink to="/" class="btn btn-sm btn-success btn-ghost rounded-full" active-class="btn-active">
+            <div class="bg-slate-800 rounded-full px-3 py-2">
+                <nav class="flex gap-2 text-white">
+                    <RouterLink to="/" class="btn btn-sm btn-success btn-ghost rounded-full " active-class="btn-active">
                         Home</RouterLink>
                     <RouterLink to="#" class="btn btn-sm btn-success btn-ghost rounded-full">Menu
                     </RouterLink>
@@ -99,5 +99,4 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap'); */
 </style>
