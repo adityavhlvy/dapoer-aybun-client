@@ -24,7 +24,7 @@ Main features:
 
 * Showcase **catering services** and **snacks/drinks**, such as:
 
-  * Kerupuk kangsung
+  * Kerupuk kangkung
   * Jeruk kasturi and butterfly pea tea
   * Traditional Indonesian dishes: rendang, gulai tunjang, ketupat, and home-style meals
 * **Business profile** and service overview
