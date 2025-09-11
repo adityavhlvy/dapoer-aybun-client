@@ -31,21 +31,23 @@ onMounted(() => {
     setTheme(selectedTheme.value)
 })
 
+import logo from '@/assets/logo.svg'
+
 </script>
 
 <template>
 
     <div class="navbar py-5">
 
-        <!-- Logo Section - With Logo-->
+        <!-- Left - Logo Section - With Logo-->
         <div class="flex flex-1">
             <div class="flex items-center">
                 <RouterLink to="/">
-                    <img alt="Dapoer Aybun logo" class="logo hover:animate-pulse" src="@/assets/logo.svg" width="75" />
+                    <img alt="Dapoer Aybun logo" class="sm:hover:animate-pulse w-40 sm:w-20" :src="logo"/>
                 </RouterLink>
                 <div class="divider divider-horizontal"></div>
                 <div>
-                    <div class="flex-col font-baskervville text-center">
+                    <div class="flex-col font-baskervville text-center text-xs sm:text-base">
                         <div>Dapoer</div>
                         <div class="tracking-widest">AyBun</div>
                     </div>
@@ -53,8 +55,8 @@ onMounted(() => {
             </div>
         </div>
 
-        <!-- Navigation Links -->
-        <div class="flex flex-2 justify-center">
+        <!-- Center - Navigation Links (Hidden on small devices) -->
+        <div class="hidden sm:flex flex-2 justify-center">
             <div class="bg-slate-800 rounded-full px-3 py-2">
                 <nav class="flex gap-2 text-white">
                     <RouterLink to="/" class="btn btn-sm btn-success btn-ghost rounded-full " active-class="btn-active">
@@ -74,10 +76,44 @@ onMounted(() => {
             </div>
         </div>
 
-        <!-- Theme Selector -->
+        <!-- Mobile Menu Button -->
+        <div class="sm:hidden flex flex-2 justify-end">
+            <div class="dropdown dropdown-center">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <RouterLink to="/" active-class="active">Home</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink to="#">Menu</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink to="#">Order</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink to="/about" active-class="active">About</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink to="#">Testimonies</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink to="#">Contact</RouterLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right- Theme Selector -->
         <div class="flex flex-1 justify-end">
             <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn m-1 capitalize">
+                <div tabindex="0" role="button" class="btn btn-sm sm:btn-md m-1 capitalize">
                     {{themes.find(t => t.name === selectedTheme)?.icon}}
                     {{ selectedTheme }}
                 </div>
@@ -98,5 +134,4 @@ onMounted(() => {
     </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
