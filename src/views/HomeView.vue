@@ -1,5 +1,5 @@
 <script setup>
-import '../assets/main.css'
+import '@/assets/main.css'
 import HomeHero from '@/components/Home/HomeHero.vue'
 </script>
 

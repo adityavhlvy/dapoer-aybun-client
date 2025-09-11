@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <footer class="footer sm:footer-horizontal bg-green-900 text-base-content p-10">
+    <footer class="footer sm:footer-horizontal bg-emerald-900 text-base-content p-10">
         <aside>
             <h1 class="text-4xl font-baskervville">Dapoer</h1>
             <h1 class="text-4xl font-baskervville tracking-widest -mt-3">AyBun</h1>
