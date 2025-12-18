@@ -6,7 +6,7 @@ import AppFooter from '@/components/AppFooter.vue'
 </script>
 
 <template>
-  <div class="bg-base-300">
+  <div class="bg-base-300 relative">
     <header>
       <AppHeader />
     </header>

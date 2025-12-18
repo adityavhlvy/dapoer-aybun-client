@@ -32,6 +32,11 @@ onMounted(() => {
 })
 
 import logo from '@/assets/logo.svg'
+import { useCartStore } from '@/stores/cart'
+import { Icon } from '@iconify/vue'
+
+const cartStore = useCartStore()
+
 
 </script>
 
@@ -61,16 +66,16 @@ import logo from '@/assets/logo.svg'
                 <nav class="flex gap-2 text-white">
                     <RouterLink to="/" class="btn btn-sm btn-success btn-ghost rounded-full " active-class="btn-active">
                         Home</RouterLink>
-                    <RouterLink to="#" class="btn btn-sm btn-success btn-ghost rounded-full">Menu
+                    <RouterLink to="/menu" class="btn btn-sm btn-success btn-ghost rounded-full" active-class="btn-active">Menu
                     </RouterLink>
-                    <RouterLink to="#" class="btn btn-sm btn-success btn-ghost rounded-full">Order
+                    <RouterLink to="/order" class="btn btn-sm btn-success btn-ghost rounded-full" active-class="btn-active">Order
                     </RouterLink>
                     <RouterLink to="/about" class="btn btn-sm btn-success btn-ghost rounded-full"
                         active-class="btn-active">About
                     </RouterLink>
-                    <RouterLink to="#" class="btn btn-sm btn-success btn-ghost rounded-full">Testimonies
+                    <RouterLink to="/testimonials" class="btn btn-sm btn-success btn-ghost rounded-full" active-class="btn-active">Testimonies
                     </RouterLink>
-                    <RouterLink to="#" class="btn btn-sm btn-success btn-ghost rounded-full">Contact
+                    <RouterLink to="/contact" class="btn btn-sm btn-success btn-ghost rounded-full" active-class="btn-active">Contact
                     </RouterLink>
                 </nav>
             </div>
@@ -92,26 +97,34 @@ import logo from '@/assets/logo.svg'
                         <RouterLink to="/" active-class="active">Home</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="#">Menu</RouterLink>
+                        <RouterLink to="/menu" active-class="active">Menu</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="#">Order</RouterLink>
+                        <RouterLink to="/order" active-class="active">Order</RouterLink>
                     </li>
                     <li>
                         <RouterLink to="/about" active-class="active">About</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="#">Testimonies</RouterLink>
+                        <RouterLink to="/testimonials" active-class="active">Testimonials</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="#">Contact</RouterLink>
+                        <RouterLink to="/contact" active-class="active">Contact</RouterLink>
                     </li>
                 </ul>
             </div>
         </div>
 
         <!-- Right- Theme Selector -->
-        <div class="flex flex-1 justify-end">
+        <div class="flex flex-1 justify-end items-center gap-2">
+            <!-- Cart Button -->
+            <RouterLink to="/order" class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                    <Icon icon="mdi:cart-outline" width="24" height="24" />
+                    <span v-if="cartStore.totalItems > 0" class="badge badge-sm badge-primary indicator-item">{{ cartStore.totalItems }}</span>
+                </div>
+            </RouterLink>
+
             <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-sm sm:btn-md m-1 capitalize">
                     {{themes.find(t => t.name === selectedTheme)?.icon}}
