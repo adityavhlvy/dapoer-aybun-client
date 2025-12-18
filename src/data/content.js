@@ -1,8 +1,8 @@
 
-import productMockup1 from '@/assets/img/product-mockup-1.png'
-import productMockup2 from '@/assets/img/product-mockup-2.png'
-import productMockup3 from '@/assets/img/product-mockup-3.png'
-import productMockup4 from '@/assets/img/product-mockup-4.png'
+import productMockup1 from '@/assets/img/product-mockup-1.PNG'
+import productMockup2 from '@/assets/img/product-mockup-2.PNG'
+import productMockup3 from '@/assets/img/product-mockup-3.PNG'
+import productMockup4 from '@/assets/img/product-mockup-4.PNG'
 
 export const CONTACT_INFO = {
     phone: '0822-8408-7664',
