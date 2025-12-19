@@ -4,15 +4,15 @@
 
 Built with:
 
-* ⚡ [Vite](https://vite.dev/) – fast build and development server
-* 🖖 [Vue 3](https://vuejs.org/) – progressive UI framework
-* 🎨 [Tailwind CSS](https://tailwindcss.com/) – utility-first styling
-* 🌼 [DaisyUI](https://daisyui.com/) – prebuilt components with theming
+- ⚡ [Vite](https://vite.dev/) – fast build and development server
+- 🖖 [Vue 3](https://vuejs.org/) – progressive UI framework
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) – utility-first styling
+- 🌼 [DaisyUI](https://daisyui.com/) – prebuilt components with theming
 
-![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite\&logoColor=white)
-![Vue](https://img.shields.io/badge/Vue.js-42B883?logo=vue.js\&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css\&logoColor=white)
-![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?logo=tailwind-css\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue.js-42B883?logo=vue.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?logo=tailwind-css&logoColor=white)
 
 ---
 
@@ -22,14 +22,16 @@ This app is designed to **present and promote the family catering business**.
 
 Main features:
 
-* Showcase **catering services** and **snacks/drinks**, such as:
+- Showcase **catering services** and **snacks/drinks**, such as:
+  - Kerupuk kangkung
+  - Jeruk kasturi and butterfly pea tea
+  - Traditional Indonesian dishes: rendang, gulai tunjang, ketupat, and home-style meals
 
-  * Kerupuk kangkung
-  * Jeruk kasturi and butterfly pea tea
-  * Traditional Indonesian dishes: rendang, gulai tunjang, ketupat, and home-style meals
-* **Business profile** and service overview
-* **Customer testimonials**
-* **Contact information** for orders
+- **Business profile** and service overview
+- **Shopping Cart System** with easy validation
+- **Direct Checkout via WhatsApp** integration
+- **Customer testimonials**
+- **Contact information** for orders
 
 The goal is to provide a simple, clear, and responsive web presence for the business.
 
@@ -95,10 +97,10 @@ npm run format
 
 ## 🌟 Key Features
 
-* ⚡ Lightweight and fast frontend with Vite + Vue 3
-* 🌼 Consistent styling using Tailwind CSS + DaisyUI
-* 🧭 Multi-page navigation with Vue Router
-* ✅ Responsive design for different devices
+- ⚡ Lightweight and fast frontend with Vite + Vue 3
+- 🌼 Consistent styling using Tailwind CSS + DaisyUI
+- 🧭 Multi-page navigation with Vue Router
+- ✅ Responsive design for different devices
 
 ---
 
@@ -106,3 +108,9 @@ npm run format
 
 Themes can be switched using the `data-theme` attribute or in `vite.config.js`.
 Full theme list: [https://daisyui.com/themes/](https://daisyui.com/themes/)
+
+---
+
+## 👥 Contributors
+
+- **Aditya Vahlevy Nugraha** (aka KuraNinja)
