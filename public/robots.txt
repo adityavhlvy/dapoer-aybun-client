@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dapoer-aybun.vercel.app/sitemap.xml
