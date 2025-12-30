@@ -6,6 +6,15 @@ import { Icon } from '@iconify/vue'
 const cartStore = useCartStore()
 
 const whatsappLink = `https://wa.me/${CONTACT_INFO.whatsapp.replace(/[^0-9]/g, '')}?text=Hello Dapoer Aybun, I would like to place an order.`
+
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: 'Cara Pesan',
+  meta: [
+    { name: 'description', content: 'Panduan mudah cara memesan katering di Dapoer Aybun. Pesan via WhatsApp sekarang.' },
+  ],
+})
 </script>
 
 <template>

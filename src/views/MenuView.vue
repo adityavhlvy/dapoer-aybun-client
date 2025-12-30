@@ -1,9 +1,14 @@
 <script setup>
 import { menuItems } from '@/data/content.js'
-import { useCartStore } from '@/stores/cart'
-import { Icon } from '@iconify/vue'
+import { useHead } from '@unhead/vue'
+import ProductCard from '@/components/ProductCard.vue'
 
-const cartStore = useCartStore()
+useHead({
+  title: 'Menu Kami',
+  meta: [
+    { name: 'description', content: 'Lihat daftar menu lengkap kami, mulai dari nasi kotak, tumpeng, hingga paket prasmanan.' },
+  ],
+})
 </script>
 
 <template>
@@ -13,38 +18,10 @@ const cartStore = useCartStore()
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
         <!-- User requested card structure -->
-        <div v-for="(menu, idx) in menuItems" :key="idx" class="card card-sm sm:card-md shadow-lg w-full sm:w-64 bg-base-100 hover:shadow-xl transition-shadow group">
-
-            <!-- Hover Gallery -->
-            <figure class="flex justify-items-center hover-gallery bg-slate-300 px-8 pb-5">
-                <img v-for="(img, i) in menu.images" :key="i" :src="img" :alt="menu.name"
-                    class="w-20 sm:w-30" />
-            </figure>
-
-            <!-- Content -->
-            <div class="card-body p-0">
-                <h2 class="card-title py-5 px-5 text-emerald-900 leading-tight">{{ menu.name }}</h2>
-                <p class="px-5 text-sm text-gray-600 line-clamp-3 mb-4">{{ menu.desc }}</p>
-
-                <div class="mt-auto pb-5 pl-5 pr-5">
-                    <div class="card-actions justify-between items-center">
-                        <span class="text-xl font-bold text-emerald-700">{{ menu.price }}</span>
-
-                         <button
-                            @click="cartStore.addToCart(menu)"
-                            class="btn btn-circle btn-sm btn-primary text-white shadow-md hover:scale-105 active:scale-95 transition-transform"
-                            title="Add to Cart"
-                        >
-                             <Icon icon="mdi:cart-plus" width="18" height="18" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ProductCard v-for="(menu, idx) in menuItems" :key="idx" :menu="menu" />
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

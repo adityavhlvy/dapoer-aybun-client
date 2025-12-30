@@ -1,5 +1,13 @@
 <script setup>
 import { testimonyItems } from '@/data/content.js'
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: 'Testimoni',
+  meta: [
+    { name: 'description', content: 'Apa kata pelanggan tentang masakan Dapoer Aybun? Baca ulasan jujur mereka di sini.' },
+  ],
+})
 </script>
 
 <template>

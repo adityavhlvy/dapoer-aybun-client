@@ -1,5 +1,13 @@
 <script setup>
 import { CONTACT_INFO } from '@/data/content.js'
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: 'Hubungi Kami',
+  meta: [
+    { name: 'description', content: 'Alamat dan kontak Dapoer Aybun. Siap melayani pesanan katering Anda di Padang dan sekitarnya.' },
+  ],
+})
 </script>
 
 <template>
