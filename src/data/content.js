@@ -107,3 +107,34 @@ export const testimonyItems = [
         text: "Selain enak, plating-nya aesthetic banget. Cocok buat konten juga!"
     }
 ]
+
+export const activityItems = [
+    {
+        title: "150 Pax Lunch Box Order",
+        date: "2023-10-15",
+        desc: "Alhamdulillah, completed an order of 150 lunch boxes for a wedding at the Multipurpose Hall. Menu: Honey Grilled Chicken, Tamarind Soup, Braised Tofu & Tempeh.",
+        category: "Order",
+        images: ["https://placehold.co/600x400/e2e8f0/1e293b?text=Lunch+Box+1", "https://placehold.co/600x400/e2e8f0/1e293b?text=Lunch+Box+2"]
+    },
+    {
+        title: "Friday Charity Sharing",
+        date: "2023-10-20",
+        desc: "Regular Friday Blessing activity, distributing 50 lunch packs to the needy and orphans in the neighborhood.",
+        category: "Social",
+        images: ["https://placehold.co/600x400/dcfce7/166534?text=Charity+1", "https://placehold.co/600x400/dcfce7/166534?text=Charity+2"]
+    },
+    {
+        title: "Independence Day Tumpeng",
+        date: "2023-08-17",
+        desc: "Special Independence Tumpeng order for the RW 05 competition. Festive and full of spirit!",
+        category: "Order",
+        images: ["https://placehold.co/600x400/fef3c7/92400e?text=Tumpeng+Indo"]
+    },
+    {
+        title: "Office Meeting Catering",
+        date: "2023-11-05",
+        desc: "Providing snack boxes and buffet lunch for a local start-up's annual meeting.",
+        category: "Order",
+        images: ["https://placehold.co/600x400/e0e7ff/3730a3?text=Office+Meeting"]
+    }
+]
